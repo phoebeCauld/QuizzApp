@@ -13,6 +13,9 @@
 		2D3AFE0F26D60DB500054EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3AFE0D26D60DB500054EBC /* Main.storyboard */; };
 		2D3AFE1126D60DB500054EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3AFE1026D60DB500054EBC /* Assets.xcassets */; };
 		2D3AFE1426D60DB500054EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3AFE1226D60DB500054EBC /* LaunchScreen.storyboard */; };
+		2D3AFE1C26D7D6A600054EBC /* questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AFE1B26D7D6A600054EBC /* questions.swift */; };
+		2D3AFE2126D7EB7600054EBC /* QuizLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AFE2026D7EB7600054EBC /* QuizLogic.swift */; };
+		2D3AFE2326D92D4900054EBC /* setViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3AFE2226D92D4900054EBC /* setViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2D3AFE1026D60DB500054EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3AFE1326D60DB500054EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3AFE1526D60DB500054EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3AFE1B26D7D6A600054EBC /* questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questions.swift; sourceTree = "<group>"; };
+		2D3AFE2026D7EB7600054EBC /* QuizLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLogic.swift; sourceTree = "<group>"; };
+		2D3AFE2226D92D4900054EBC /* setViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		2D3AFE0626D60DB500054EBC /* QuizzApp */ = {
 			isa = PBXGroup;
 			children = (
-				2D3AFE0726D60DB500054EBC /* AppDelegate.swift */,
-				2D3AFE0926D60DB500054EBC /* SceneDelegate.swift */,
-				2D3AFE0B26D60DB500054EBC /* ViewController.swift */,
-				2D3AFE0D26D60DB500054EBC /* Main.storyboard */,
-				2D3AFE1026D60DB500054EBC /* Assets.xcassets */,
-				2D3AFE1226D60DB500054EBC /* LaunchScreen.storyboard */,
+				2D3AFE1F26D7EB3400054EBC /* Model */,
+				2D3AFE1E26D7EB1C00054EBC /* View */,
+				2D3AFE1D26D7EB0300054EBC /* Controller */,
 				2D3AFE1526D60DB500054EBC /* Info.plist */,
 			);
 			path = QuizzApp;
+			sourceTree = "<group>";
+		};
+		2D3AFE1D26D7EB0300054EBC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D3AFE0726D60DB500054EBC /* AppDelegate.swift */,
+				2D3AFE0926D60DB500054EBC /* SceneDelegate.swift */,
+				2D3AFE0B26D60DB500054EBC /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D3AFE1E26D7EB1C00054EBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D3AFE2226D92D4900054EBC /* setViews.swift */,
+				2D3AFE0D26D60DB500054EBC /* Main.storyboard */,
+				2D3AFE1226D60DB500054EBC /* LaunchScreen.storyboard */,
+				2D3AFE1026D60DB500054EBC /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D3AFE1F26D7EB3400054EBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D3AFE1B26D7D6A600054EBC /* questions.swift */,
+				2D3AFE2026D7EB7600054EBC /* QuizLogic.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3AFE0C26D60DB500054EBC /* ViewController.swift in Sources */,
+				2D3AFE2326D92D4900054EBC /* setViews.swift in Sources */,
+				2D3AFE2126D7EB7600054EBC /* QuizLogic.swift in Sources */,
+				2D3AFE1C26D7D6A600054EBC /* questions.swift in Sources */,
 				2D3AFE0826D60DB500054EBC /* AppDelegate.swift in Sources */,
 				2D3AFE0A26D60DB500054EBC /* SceneDelegate.swift in Sources */,
 			);
